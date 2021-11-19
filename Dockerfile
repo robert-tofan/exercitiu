@@ -1,7 +1,2 @@
-FROM debian:stretch
-
-RUN apt-get update && apt-get install -y cowsay
-COPY docker.cow /usr/share/cowsay/cows/docker.cow
-
-ENTRYPOINT ["/usr/games/cowsay","-f","docker"]
-CMD ["moby","dock"]
+FROM python:3.7-alpine
+CMD [ "python", "-c", "print('Hello Andreea!')"]
