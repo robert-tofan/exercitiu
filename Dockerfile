@@ -2,7 +2,7 @@ FROM python:3
 
 ENV DJANGO_LOCALDB=true
 
-COPY ./code
+COPY . /code
 
 WORKDIR /code
 
